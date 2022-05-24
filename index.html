@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+    
+</head>   
+
+<body>
+<h2>Preenchimento de formulário</h2>    
+<form name="fomr1" action="form_processado.html" method="post" onsubmit="return validar ()">
+    Nome: <input name="nomeCompleto" placeholder="Informe seu nome completo" autofocus="true" type="text"><br><br>
+    Email:<input name="email" placeholder="Informe o seu Email" type="text"><br><Br>
+    Cidade:<input name="cidade" placeholder="Informe a cidade" type=""><br><br>
+    <input type="radio" name="sexo" id="masculino" value="Masculino">
+    <label for ="masculino">Masculino</label><br>
+    <input type="radio" name="sexo" id="feminino" value="Feminino">
+    <label for ="feminino">Feminino</label><br><br>
+    <select  name='tamanho_tabela' size="list box">
+       <option value='20%'>20%</option>
+       <option value='40%'>40%</option>
+       <option value='60%'>60%</option>
+       <option value='80%'>80%</option>
+       <option value='100%' select='true'>100%</option>
+    </select>  
+    <input type="submit" name="sbt" value="Enviar"/>
+    <textarea cols='20' rows='10' name='comentarios'>Olá, mundo!</textarea>
+</form>
+
+</body> 
+</hmtl>    
